@@ -1,0 +1,84 @@
+/*----------------------------------TAG SELECTORS-----------------------------------------------*/
+*{
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+body{
+  background: linear-gradient(to left, #051937, #001a4a, #00195b, #00166c, #100b7a);
+  background-image: url("blue.png");
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*----------------------------------CLASS SELECTORS---------------------------------------------*/
+section.header{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+div.mainheader{
+  font-size: 3rem;
+  font-weight: 700;
+}
+div.mainheader3{
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+div.mainheader1{
+  font-size: 1rem;
+  letter-spacing: 5px;
+}
+div.img1{
+  width: 50%;
+  position:relative;
+}
+div.img2{
+  width: 50%;
+  position: relative;
+  left: 360px;
+  bottom: 520px;
+
+}
+div.img3{
+  width: 50%;
+  position: relative;
+  left: 360px;
+  bottom: 500px;
+}
+div.img4{
+  width: 50%;
+  position: relative;
+  left: 860px;
+  bottom: 1015px;
+
+}
+div.img5{
+  width: 50%;
+  position: relative;
+  left: 860px;
+  bottom: 1000px;
+}
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: 350px min-content min-content;
+}
+
+.grid-item {
+  font-size: 30px;
+  text-align: left;
+}
+
+.fit{
+  padding-top: 20px;
+}
+
+.page2{
+  margin: 30px;
+  text-align: center;
+}

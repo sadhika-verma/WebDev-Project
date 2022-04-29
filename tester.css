@@ -1,0 +1,158 @@
+body{
+  background-color: #22222A;
+  position: relative;
+  min-height: 3000px;
+}
+  .line {
+    position: relative;
+  }
+    :before {
+      content: '';
+      background-color: blue;
+      position: fixed;
+      width: 1px;
+      height: 100%;
+      min-height: 5vh;
+      left: 0px;
+      z-index: 0;
+      animation: linemove 10s infinite;
+    }
+    #line_0 {
+      &:before {
+        left: 6%;
+        height: 20%;
+        animation: linemove_1 10s infinite;
+      }
+    }
+    #line_1 {
+      &:before {
+        left: 16%;
+        height: 20%;
+        animation: linemove_1 10s infinite;
+      }
+    }
+    #line_2 {
+      &:before {
+        left: 32%;
+        height: 14%;
+        top: 40%;
+        animation: linemove_2 10s infinite;
+      }
+    }
+    #line_3 {
+      &:before {
+        left: 48%;
+        height: 13%;
+        top: 24%;
+        animation: linemove_3 10s infinite;
+      }
+    }
+    #line_4 {
+      &:before {
+        left: 64%;
+        height: 14%;
+        top: 36%;
+        animation: linemove_4 10s infinite;
+      }
+    }
+    #line_5 {
+      &:before {
+        left: 80%;
+        height: 22%;
+        top: 60%;
+        animation: linemove_5 10s infinite;
+        z-index: 0;
+      }
+    }
+    #line_6 {
+      &:before {
+        left: 94%;
+        height: 22%;
+        top: 60%;
+        animation: linemove_5 10s infinite;
+        z-index: 0;
+      }
+    }
+    #line-0-white {
+      &:before {
+        left: 6%;
+        height: 100%;
+        background-color: #282830;
+        z-index: -1;
+      }
+    }
+    #line-1-white {
+      &:before {
+        left: 16%;
+        height: 100%;
+        background-color: #282830;
+        z-index: -1;
+      }
+    }
+    #line-2-white {
+      &:before {
+        left: 32%;
+        height: 100%;
+        background-color: #282830;
+        z-index: -1;
+      }
+    }
+    #line-3-white {
+      &:before {
+        left: 48%;
+        height: 100%;
+        background-color: #282830;
+        z-index: -1;
+      }
+    }
+    #line-4-white {
+      &:before {
+        left: 64%;
+        height: 100%;
+        background-color: #282830;
+        z-index: -1;
+      }
+    }
+    #line-5-white {
+      &:before {
+        left: 80%;
+        height: 100%;
+        background-color: #282830;
+        z-index: -1;
+      }
+    }
+    #line-6-white {
+      &:before {
+        left: 94%;
+        height: 100%;
+        background-color: #282830;
+        z-index: -1;
+      }
+    }
+  }
+}
+@keyframes linemove_1 {
+  0%   {top: 20%;}
+  50% {top: 30%;}
+  100% {top: 20%;}
+}
+@keyframes linemove_2 {
+  0%   {top: 40%;}
+  50% {top: 60%;}
+  100% {top: 40%;}
+}
+@keyframes linemove_3 {
+  0%   {top: 24%;}
+  50% {top: 55%;}
+  100% {top: 24%;}
+}
+@keyframes linemove_4 {
+  0%   {top: 36%;}
+  50% {top: 49%;}
+  100% {top: 36%;}
+}
+@keyframes linemove_5 {
+  0%   {top: 60%;}
+  50% {top: 80%;}
+  100% {top: 60%;}
+}

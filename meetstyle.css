@@ -1,0 +1,44 @@
+/*----------------------------------TAG SELECTORS-----------------------------------------------*/
+body{
+  background: linear-gradient(to left, #051937, #001a4a, #00195b, #00166c, #100b7a);
+  background-image: url("blue.png");
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*----------------------------------CLASS SELECTORS---------------------------------------------*/
+section.header{
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+div.mainheader{
+  font-size: 3rem;
+  font-weight: 700;
+}
+div.mainheader1{
+  font-size: 1rem;
+}
+
+.column {
+  float: left;
+  width: 29.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div.i2{
+  position: relative;
+  right: 20px;
+}

@@ -1,0 +1,67 @@
+/*----------------------------------TAG SELECTORS-----------------------------------------------*/
+body{
+  background-image: url("website background.png");
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 90%;
+  background-color: white;
+  height: 0.4px;
+}
+/*----------------------------------CLASS SELECTORS---------------------------------------------*/
+section.page2{
+  text-align: center;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+div.r {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+div.r:first-of-type {
+  animation: showup 7s infinite;
+}
+
+div.r:last-of-type {
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+div.r:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:-120px; }
+    100% { margin-left:-120px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:600px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:600px;}
+}
